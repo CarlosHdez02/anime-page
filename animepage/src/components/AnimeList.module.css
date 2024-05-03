@@ -1,0 +1,29 @@
+.anime {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid with minimum item width of 250px */
+    gap: 20px; /* Gap between grid items */
+    justify-items: center; /* Center items horizontally within each grid cell */
+    padding: 3rem 5rem;
+}
+
+.animeItem {
+    padding: 20px ;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically within each grid cell */
+}
+
+.animeImage {
+    width: 13rem; /* Ensure image fills its container */
+    max-width: 200px; /* Limit image width */
+    height: 19rem; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for image */
+    margin-bottom: 10px;
+}
+.animeTitle{
+    padding-top:0.5rem;
+    padding-bottom:1rem;
+}

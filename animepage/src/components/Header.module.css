@@ -1,0 +1,25 @@
+.myHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10rem;
+    background-color: rgb(202, 201, 200);
+    padding-top: 1rem;
+  }
+  
+  .headerContent {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .myForm {
+    padding-top: 1rem;
+  }
+  .myInput{
+    padding: 1rem 1rem;
+    width:17rem;
+    height:2rem;
+    border-radius: 1rem;
+  }
