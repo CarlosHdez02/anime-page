@@ -1,0 +1,14 @@
+.myInput{
+    padding: 1rem 1rem;
+    width:17rem;
+    height:2rem;
+    border-radius: 1rem;
+  }
+
+  .visible {
+    display: block; /* Show the item */
+}
+
+.hidden {
+    display: none; /* Hide the item */
+}

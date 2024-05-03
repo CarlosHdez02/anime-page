@@ -2,8 +2,13 @@ import React from "react";
 import Button from "./Button";
 import classes from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
+import { AnimeProps } from "../../animes";
+import SearchBar from "./SearchBar";
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  animes:AnimeProps[]
+}
+const Header: React.FC<HeaderProps> = ({animes}) => {
   const navigate = useNavigate();
 
   const handlePopularClick = () => {
@@ -23,11 +28,7 @@ const Header: React.FC = () => {
       <h1>Popular Anime</h1>
       <div className={classes.headerContent}>
         <form className={classes.myForm}>
-          <input className={classes.myInput}
-            type="search"
-            id="search"
-            placeholder="Search for an anime..."
-          />
+         <SearchBar animes={animes}/>
         </form>
         <div className={classes.buttonContainer}>
           <Button onClick={handlePopularClick}>Popular</Button>
